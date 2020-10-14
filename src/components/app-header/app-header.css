@@ -1,0 +1,21 @@
+.app-header{
+    background-color: #EADEDB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.app-header_money{
+    text-align: center;
+    display: flex;
+}
+.app-header_sum{
+    margin-left: 30px;
+}
+.money{
+    font-size: 20px;
+}

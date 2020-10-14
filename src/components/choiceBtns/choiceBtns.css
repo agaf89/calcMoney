@@ -1,0 +1,39 @@
+.choice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.choice-item_btn{
+    width: 130px;
+    height: 40px;
+    margin: 0 15px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    background-color: #79C753;
+    text-transform: uppercase;
+}
+.choice-item_btn:focus{
+    outline: none;
+}
+.choice-item_btn:hover{
+    background-color: #66a845;
+    transform: scale(1.02);
+    transition: all 0.1s;
+    color: white;
+}
+.cost{
+    background-color: #DD4124;
+}
+.cost:hover{
+    background-color: #bd2e15;
+    transform: scale(1.02);
+    transition: all 0.1s;
+    
+}
+.choice-btns{
+    margin-top: 10px;
+}
