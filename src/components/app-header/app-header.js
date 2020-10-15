@@ -2,11 +2,17 @@ import React from 'react';
 import './app-header.css';
 
 const AppHeader = () => {
+    const date = new Date()
+    let formatter = new Intl.DateTimeFormat("ru", {
+        weekday: "long",
+        hour: "numeric",
+        minute: "numeric"
+      });
     return (
         <div className='app-header'>
             <div className='app-header_name'>
                 <h1>Agafonov Stanislav</h1>
-                <span>20:45:10 12 октября 2020</span>
+                <span>{formatter.format(date)}</span>
             </div>
             <div className='app-header_money'>
                 <div className="app-header_sum">
