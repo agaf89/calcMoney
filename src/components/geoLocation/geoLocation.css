@@ -1,0 +1,22 @@
+.weather{
+    position: absolute;
+    left: 190px;
+    bottom: 5px;
+}
+
+.cloud{
+    font-size: 10px;
+}
+.weather_img{
+    position: absolute;
+    width: 50px;
+    left: -55px;
+    bottom: -7px;
+}
+.error-message{
+    font-size: 9px;
+    
+}
+.error{
+    margin-bottom: 10px;
+}

@@ -14,8 +14,9 @@ export default class AddMoney extends Component{
         this.handleSubmit = this.handleSubmit.bind(this)
         
     }
-    onValueChange(e){
-        this.setState({ text: e.target.value})
+    onValueChange(e){ //записываем в переменную строго цифры и отправляем дальше на валидцаию
+        const regExp = e.target.value.replace(/\D/g, "")
+        this.setState({ text: regExp})
     }
 
     handleSubmit(e){

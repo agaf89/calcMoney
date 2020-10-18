@@ -40,3 +40,9 @@
 .choice-btns{
     margin-top: 10px;
 }
+.choice-item_btn:active{
+    background-color: #79C753;
+}
+.cost:active{
+    background-color:  #DD4124;
+}
