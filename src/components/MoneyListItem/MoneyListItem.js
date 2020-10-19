@@ -11,19 +11,12 @@ export default class MoneyListItem extends Component{
         } else{
             classNames+= ' minusMoney'
         }
-        let formatter = new Intl.DateTimeFormat("ru", {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-            hour: "numeric",
-            minute: "numeric"
-          });
           
         return(
         <>
             <div className='moneyListItem_descr'>
                 <span>{label}</span>
-                <div className="moneyListItem_date">{formatter.format(date)}</div>
+                <div className="moneyListItem_date">{date}</div>
                 <div className={classNames}>{status}</div>
             </div>
             <button onClick={onDelete} type='button' className='btn-trash' id='del' data-name = "Удалить">

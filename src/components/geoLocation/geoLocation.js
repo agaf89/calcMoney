@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Spinner from '../spinner/spinner'
 import './geoLocation.css'
 
+
 export default class Weather extends Component{
     constructor(props){
         super(props)
@@ -10,21 +11,23 @@ export default class Weather extends Component{
                 temp: null,
                 city: null,
                 cloud: null,
-                img: null
+                img: null,
+                test: null
             },
             isLoaded: false,
             isError: false
+            
         }
         this.errorResponse = this.errorResponse.bind(this)
     }
     componentDidMount(){
         this.reqWeather();
+        
     }
     reqWeather(){
         navigator.geolocation.getCurrentPosition( (position) => {
             let latitude = position.coords.latitude;
             let longitude = position.coords.longitude;
-            console.log(latitude,longitude)
             fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=1a19afc9a8ec2f8110dda5a85de72ece&lang=ru`)
             .then(res => {
                 return res.json()
@@ -38,7 +41,7 @@ export default class Weather extends Component{
                     } else {
                         transformTemp = '-' + transformTemp
                     }
-                    console.log(jsonResponse)
+                    
                     return {
                         weatherData: {
                             temp: transformTemp,

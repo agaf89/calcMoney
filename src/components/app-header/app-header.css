@@ -32,3 +32,9 @@
 .minus{
     color: #DD4124;
 }
+.spinner_list{
+    position: relative;
+    top: 137px;
+    left: 261px;
+    transform: scale(2.0);
+}

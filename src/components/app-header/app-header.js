@@ -24,11 +24,11 @@ const AppHeader = ({totalMinus,totalSum,login}) => {
             <div className='app-header_money'>
                 <div className="app-header_sum">
                     <h3 className="title">Доходы</h3>
-                    <span className="money">{formatt.format(localStorage.getItem('plus'))}</span>
+                    <span className="money">{formatt.format(totalSum)}</span>
                 </div>
                 <div className="app-header_sum">
                     <h3 className="title">Расходы</h3>
-                    <span className="money minus">-{formatt.format(localStorage.getItem('minus'))}</span>
+                    <span className="money minus">-{formatt.format(totalMinus)}</span>
                 </div>
             </div>
         </div>

@@ -3,7 +3,7 @@ import './moneyList.css'
 import MoneyListItem from '../MoneyListItem/MoneyListItem'
 
 const moneyList = ({data,onDelete})=>{
-    /* console.log(JSON.parse(localStorage.getItem('data'))) */
+    
     const elements = data.map( item =>{
         return(
             <li key={item.id} className='moneyListItem'>
